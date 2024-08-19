@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="app.css" />
+    <script defer src="app.js"></script>
+    <title>Age calculator app</title>
+  </head>
+  <body class="bg-slate-200 flex justify-center items-center">
+    <div
+      class="bg-slate-100 lg:w-[480px] lg:h-[380px] mt-[200px] rounded-t-xl rounded-bl-xl rounded-br-[120px] shadow-2xl sm:h-[400px] sm:w-[350px]"
+    >
+      <div class="mt-5 ml-7">
+        <form class="flex flex-row gap-5" action="">
+          <div class="flex flex-col">
+            <label class="mb-1 daylabel font-Poppins text-SmokeyGrey" for="day"
+              >DAY</label
+            >
+            <input
+              class="bg-slate-100 border-solid border-[1px] border-gray-400 w-20 h-8 rounded-sm p-2 placeholder:text-lg focus:outline-fuchsia-900 day input"
+              type="text"
+              name="day"
+              id="day"
+              placeholder="DD"
+            />
+            <p
+              class="text-LightRed text-[8px] font-bold hidden errortext errortext1"
+            >
+              This field is required
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <label
+              class="mb-1 monthlabel font-Poppinsv text-SmokeyGrey"
+              for="month"
+              >MONTH</label
+            >
+            <input
+              class="bg-slate-100 border-solid border-[1px] border-gray-400 w-20 h-8 rounded-sm p-2 placeholder:text-lg focus:outline-fuchsia-900 month input"
+              type="text"
+              name="month"
+              id="month"
+              placeholder="MM"
+            />
+            <p
+              class="text-LightRed text-[8px] font-bold hidden errortext errortext2"
+            >
+              This field is required
+            </p>
+          </div>
+          <div class="flex flex-col">
+            <label
+              class="mb-1 yearlabel font-Poppins text-SmokeyGrey"
+              for="year"
+              >YEAR</label
+            >
+            <input
+              class="bg-slate-100 border-solid border-[1px] border-gray-400 w-20 h-8 rounded-sm p-2 placeholder:text-lg focus:outline-fuchsia-900 year input"
+              type="text"
+              name="year"
+              id="year"
+              placeholder="YYYY"
+            />
+            <p
+              class="text-LightRed text-[8px] font-bold hidden errortext errortext3"
+            >
+              This field is required
+            </p>
+          </div>
+        </form>
+      </div>
+      <div
+        class="sm:my-5 sm:relative flex flex-row sm:items-center sm:justify-center"
+      >
+        <hr
+          class="sm:my-10 lg:w-[350px] sm:w-[280px] border-LightGrey sm:z-0"
+        />
+        <img
+          class="bg-CustomPurple rounded-full lg:p-4 lg:w-16 lg:h-16 sm:p-4 sm:w-14 sm:h-14 hover:bg-black submit sm:absolute lg:relative sm:z-10"
+          src="images/icon-arrow.svg"
+          alt="an icon"
+        />
+      </div>
+      <div class="ml-10 sm:my-3">
+        <p class="text-5xl font-extrabold font-PoppinsExtraBold">
+          <span class="text-CustomPurple font-bold spayear">--</span> years
+        </p>
+        <p class="text-5xl font-extrabold font-PoppinsExtraBold">
+          <span class="text-CustomPurple font-bold spamonth">--</span> months
+        </p>
+        <p class="text-5xl font-extrabold font-PoppinsExtraBold">
+          <span class="text-CustomPurple font-bold spaday">--</span> days
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
