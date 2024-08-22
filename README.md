@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:(https://www.frontendmentor.io/solutions/general-design-using-tailwind-css-yNMDr4fICe)
+- Live Site URL:(https://mini-age-calculator.netlify.app/)
 
 ## My process
 
