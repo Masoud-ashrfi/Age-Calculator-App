@@ -43,7 +43,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- js
+- JS
 
 ### What I learned
 

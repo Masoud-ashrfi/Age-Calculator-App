@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     screens: {
       sm: "375px",
-      lg: "967px",
+      lg: "800px",
     },
     extend: {
       fontFamily: {

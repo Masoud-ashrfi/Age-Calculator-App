@@ -16,21 +16,6 @@ const spanDay = document.querySelector(".spaday");
 const spanMonth = document.querySelector(".spamonth");
 const spanYear = document.querySelector(".spayear");
 
-//FUNCTIONS
-const calcAge = function (year) {
-  if (month.value > 8) return 2024 - year;
-  else return 2024 - year - 1;
-};
-
-const calcMonth = function (month) {
-  if (month > 8) return month - 8;
-  else return Number(month) - 8 + 12;
-};
-
-const calcDay = function (day) {
-  if (day < 19) return 19 - day;
-  else return day - 19 + 19;
-};
 submit.addEventListener("click", function (e) {
   //ERROR NOT INPUT
   if (!day.value) {
@@ -96,8 +81,23 @@ submit.addEventListener("click", function (e) {
       (day.value == 31 && [4, 6, 9, 11].includes(parseInt(month.value)))
     )
   ) {
-    spanYear.textContent = calcAge(year.value);
-    spanMonth.textContent = calcMonth(month.value);
-    spanDay.textContent = calcDay(day.value);
+    const birthday = `${month.value}/${day.value}/${year.value}`;
+    console.log(birthday);
+    const birthdayObj = new Date(birthday);
+    console.log(birthdayObj);
+    const ageDiffMill = Date.now() - birthdayObj;
+    console.log(ageDiffMill);
+    const ageDate = new Date(ageDiffMill);
+    console.log(ageDate);
+    const ageYears = ageDate.getUTCFullYear() - 1970;
+    console.log(ageYears);
+    const ageMonths = ageDate.getUTCMonth();
+    console.log(ageMonths);
+    const ageDays = ageDate.getUTCDay();
+    console.log(ageDays);
+
+    spanYear.textContent = ageYears;
+    spanMonth.textContent = ageMonths;
+    spanDay.textContent = ageDays;
   }
 });
